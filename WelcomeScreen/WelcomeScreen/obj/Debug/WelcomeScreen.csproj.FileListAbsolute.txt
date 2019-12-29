@@ -1,0 +1,7 @@
+C:\Users\Student\Desktop\The_Tech_Academy_C_Sharp_Small_Projects\WelcomeScreen\WelcomeScreen\bin\Debug\WelcomeScreen.exe.config
+C:\Users\Student\Desktop\The_Tech_Academy_C_Sharp_Small_Projects\WelcomeScreen\WelcomeScreen\bin\Debug\WelcomeScreen.exe
+C:\Users\Student\Desktop\The_Tech_Academy_C_Sharp_Small_Projects\WelcomeScreen\WelcomeScreen\bin\Debug\WelcomeScreen.pdb
+C:\Users\Student\Desktop\The_Tech_Academy_C_Sharp_Small_Projects\WelcomeScreen\WelcomeScreen\obj\Debug\WelcomeScreen.csprojAssemblyReference.cache
+C:\Users\Student\Desktop\The_Tech_Academy_C_Sharp_Small_Projects\WelcomeScreen\WelcomeScreen\obj\Debug\WelcomeScreen.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\The_Tech_Academy_C_Sharp_Small_Projects\WelcomeScreen\WelcomeScreen\obj\Debug\WelcomeScreen.exe
+C:\Users\Student\Desktop\The_Tech_Academy_C_Sharp_Small_Projects\WelcomeScreen\WelcomeScreen\obj\Debug\WelcomeScreen.pdb
