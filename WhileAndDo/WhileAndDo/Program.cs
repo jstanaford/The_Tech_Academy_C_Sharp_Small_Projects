@@ -22,6 +22,8 @@ namespace WhileAndDo
 				{
 					case 13:
 						Console.WriteLine("You guessed the number 13! That is correct!");
+						Console.WriteLine("Thank you for playing! Have a good day!");
+						Console.WriteLine("Press esc to exit");
 						isGuessed = true;
 						break;
 					default:
