@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace SuperClassPractice
 {
-	class Program
+	public class Program
 	{
 		static void Main(string[] args)
 		{
 
 			Employee employee = new Employee();
+			employee.FirstName = "Sample";
+			employee.LastName = "Student";
+			
 			employee.SayName();
 			Console.ReadLine();
 
@@ -25,8 +28,8 @@ namespace SuperClassPractice
 
 		public void SayName()
 		{
-			
-			Console.WriteLine("Name: [full name]");
+			string FullName = FirstName + " " + LastName;
+			Console.WriteLine("Name: " + FullName);
 		}
 		
 
@@ -36,6 +39,7 @@ namespace SuperClassPractice
 	class Employee : Person
 	{
 		public int ID { get; set; }
+		
 
 
 	}

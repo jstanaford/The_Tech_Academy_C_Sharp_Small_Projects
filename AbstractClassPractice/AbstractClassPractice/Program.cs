@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AbstractClassPractice
 {
-	class Program
+	public class Program
 	{
 		static void Main(string[] args)
 		{
@@ -17,5 +17,20 @@ namespace AbstractClassPractice
 	}
 
 
-	class 
+	public abstract class Person
+	{
+		public string firstName { get; set; }
+		public string lastName { get; set; }
+
+		public void SayName()
+		{
+
+		}
+
+	}
+
+	public class Employee : Person
+	{
+
+	}
 }
