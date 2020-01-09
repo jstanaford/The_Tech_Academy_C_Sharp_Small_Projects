@@ -22,7 +22,7 @@ namespace PracticeWithInstantiate
 			Console.ReadLine();
 
 			MathNStuff constant3 = new MathNStuff();
-			Console.WriteLine(constant3.MyMethod("five"));
+			Console.WriteLine(constant3.MyMethod("5"));
 			Console.ReadLine();
 		}
 	}
