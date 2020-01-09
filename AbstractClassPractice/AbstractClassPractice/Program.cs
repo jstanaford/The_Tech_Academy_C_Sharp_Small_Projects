@@ -46,10 +46,8 @@ namespace AbstractClassPractice
 			list2.Things = new List<int>() { 1, 0, 1, 1 };
 
 
-			foreach ( )
-			{
-				Console.WriteLine(list1 + list2);
-			}
+			
+			
 		
 			Console.ReadLine();
 			
