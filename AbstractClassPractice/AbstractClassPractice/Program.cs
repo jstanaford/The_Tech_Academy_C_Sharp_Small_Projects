@@ -10,7 +10,12 @@ namespace AbstractClassPractice
 	{
 		static void Main(string[] args)
 		{
+			Employee employee = new Employee();
+			employee.FirstName = "Sample";
+			employee.LastName = "Student";
 
+			employee.SayName();
+			Console.ReadLine();
 
 
 		}
@@ -19,18 +24,25 @@ namespace AbstractClassPractice
 
 	public abstract class Person
 	{
-		public string firstName { get; set; }
-		public string lastName { get; set; }
+		public string FirstName { get; set; }
+		public string LastName { get; set; }
 
-		public void SayName()
+		public virtual void SayName()
 		{
-
+			string fullName = FirstName + " " + LastName;
+			Console.WriteLine("Name: " + fullName);
 		}
 
 	}
 
 	public class Employee : Person
 	{
+
+	public virtual void SayName()
+		{
+			
+		}
+		
 
 	}
 }
