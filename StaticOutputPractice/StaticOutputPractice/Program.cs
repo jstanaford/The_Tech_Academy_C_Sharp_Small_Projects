@@ -11,7 +11,7 @@ namespace StaticOutputPractice
 		static void Main(string[] args)
 		{
 
-			Console.WriteLine("Welcome to my program. Enter a number you want divided by two pls thanks.");
+			Console.WriteLine("Welcome to my program.  Enter a number you want divided by two pls thanks.");
 			int userInput = Convert.ToInt32(Console.ReadLine());
 			VoidClass myDivision = new VoidClass();
 			myDivision.VoidMethod(userInput);
