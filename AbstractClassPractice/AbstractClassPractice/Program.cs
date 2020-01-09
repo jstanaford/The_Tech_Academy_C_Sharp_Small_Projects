@@ -36,8 +36,7 @@ namespace AbstractClassPractice
 
 		public virtual void SayName()
 		{
-			string fullName = FirstName + " " + LastName;
-			Console.WriteLine("Name: " + fullName);
+			
 		}
 
 	}
@@ -45,9 +44,10 @@ namespace AbstractClassPractice
 	public class Employee : Person, IQuittable
 	{
 
-	public virtual void SayName()
+	public override void SayName()
 		{
-			
+			string fullName = FirstName + " " + LastName;
+			Console.WriteLine("Name: " + fullName);
 		}
 
 	public void Quit()
