@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TwentyOne
 {
-	public class Game
+	public abstract class Game
 	{
 
 		public List<string> Players { get; set; }
@@ -14,7 +14,10 @@ namespace TwentyOne
 		public string Dealer { get; set; }
 
 
-		public void ListPlayers()
+		//abstract method not property
+		public abstract void Play();
+
+		public virtual void ListPlayers()
 		{
 			foreach (string player in Players)
 			{
