@@ -10,7 +10,8 @@ namespace AbstractClassPractice
 	{
 		static void Main(string[] args)
 		{
-
+			Console.WriteLine("Press enter to see if employees Sample Student and Jacob Stanaford share the same idea number.\nAnswer will be true or false");
+			Console.ReadLine();
 			//call SayName
 			Employee employee = new Employee();
 			employee.FirstName = "Sample";
@@ -21,7 +22,7 @@ namespace AbstractClassPractice
 			Employee employee2 = new Employee();
 			employee2.FirstName = "Jacob";
 			employee2.LastName = "Stanaford";
-			employee2.ID = 1;
+			employee2.ID = 2;
 
 			bool Answer = employee == employee2;
 			Console.WriteLine(Answer);
