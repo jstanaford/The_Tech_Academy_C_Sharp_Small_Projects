@@ -10,31 +10,50 @@ namespace AbstractClassPractice
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Press enter to see if employees Sample Student and Jacob Stanaford share the same idea number.\nAnswer will be true or false");
-			Console.ReadLine();
-			//call SayName
-			Employee employee = new Employee();
-			employee.FirstName = "Sample";
-			employee.LastName = "Student";
-			employee.ID = 1;
+			//Console.WriteLine("Press enter to see if employees Sample Student and Jacob Stanaford share the same idea number.\nAnswer will be true or false");
+			//Console.ReadLine();
+			////call SayName
+			//Employee employee = new Employee();
+			//employee.FirstName = "Sample";
+			//employee.LastName = "Student";
+			//employee.ID = 1;
 
 
-			Employee employee2 = new Employee();
-			employee2.FirstName = "Jacob";
-			employee2.LastName = "Stanaford";
-			employee2.ID = 2;
+			//Employee employee2 = new Employee();
+			//employee2.FirstName = "Jacob";
+			//employee2.LastName = "Stanaford";
+			//employee2.ID = 2;
 
-			bool Answer = employee == employee2;
-			Console.WriteLine(Answer);
+			//bool Answer = employee == employee2;
+			//Console.WriteLine(Answer);
 
-			//employee.SayName();
-			Console.ReadLine();
+			////employee.SayName();
+			//Console.ReadLine();
 
 
-			//calling Quit()
-			IQuittable quit1 = new Employee();
-			quit1.Quit();
+			////calling Quit()
+			//IQuittable quit1 = new Employee();
+			//quit1.Quit();
+
+
+			//Generic property calls below
+
+			Employee<string> list1 = new Employee<string>();
+			list1.Things = new List<string>() { "These", "Are", "Words", };
+
+			
+			Employee<int> list2 = new Employee<int>();
+			list2.Things = new List<int>() { 1, 0, 1, 1 };
+
+
+			foreach ( )
+			{
+				Console.WriteLine(list1 + list2);
+			}
 		
+			Console.ReadLine();
+			
+			
 
 		}
 	}
@@ -53,9 +72,10 @@ namespace AbstractClassPractice
 
 	}
 
-	public class Employee : Person, IQuittable
+	public class Employee<T> : Person, IQuittable
 	{
 		public int ID { get; set; }
+		public List<T> Things { get; set; }
 
 
 		public override void SayName()
@@ -70,29 +90,29 @@ namespace AbstractClassPractice
 			Console.ReadLine();
 		}
 		 
-		public static bool operator== (Employee employee1, Employee employee2)
-		{
-			if (employee1.ID == employee2.ID)
-			{
-				return true;
-			}
-			else
-			{
-				return false;
-			}
-		}
+		//public static bool operator== (Employee employee1, Employee employee2)
+		//{
+		//	if (employee1.ID == employee2.ID)
+		//	{
+		//		return true;
+		//	}
+		//	else
+		//	{
+		//		return false;
+		//	}
+		//}
 		
-		public static bool operator!= (Employee employee1, Employee employee2)
-		{
-			if (employee1.ID != employee2.ID)
-			{
-				return true;
-			}
-			else
-			{
-				return false;
-			}
-		}
+		//public static bool operator!= (Employee employee1, Employee employee2)
+		//{
+		//	if (employee1.ID != employee2.ID)
+		//	{
+		//		return true;
+		//	}
+		//	else
+		//	{
+		//		return false;
+		//	}
+		//}
 
 	}
 }
