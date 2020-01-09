@@ -10,6 +10,8 @@ namespace AbstractClassPractice
 	{
 		static void Main(string[] args)
 		{
+
+			//call SayName
 			Employee employee = new Employee();
 			employee.FirstName = "Sample";
 			employee.LastName = "Student";
@@ -17,6 +19,11 @@ namespace AbstractClassPractice
 			employee.SayName();
 			Console.ReadLine();
 
+
+			//calling Quit()
+			IQuittable quit1 = new Employee();
+			quit1.Quit();
+		
 
 		}
 	}
@@ -35,14 +42,19 @@ namespace AbstractClassPractice
 
 	}
 
-	public class Employee : Person
+	public class Employee : Person, IQuittable
 	{
 
 	public virtual void SayName()
 		{
 			
 		}
-		
+
+	public void Quit()
+		{
+			Console.WriteLine("Press enter to quit");
+			Console.ReadLine();
+		}
 
 	}
 }
