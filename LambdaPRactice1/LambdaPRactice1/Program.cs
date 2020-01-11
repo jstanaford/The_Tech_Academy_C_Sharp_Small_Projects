@@ -11,8 +11,8 @@ namespace LambdaPRactice1
 		static void Main(string[] args)
 		{
 			//Creating my list:
-			
-			//List<Employee> employees = new List<Employee>();
+
+			List<Employee> employees = new List<Employee>();
 			employees.Add(new Employee { FirstName = "Henry", LastName = "Stanaford", ID = 1 });
 			employees.Add(new Employee { FirstName = "Joe", LastName = "Montana", ID = 2 });
 			employees.Add(new Employee { FirstName = "Joe", LastName = "Stalin", ID = 3 });
@@ -36,15 +36,18 @@ namespace LambdaPRactice1
 
 
 			// Step 3 lambda expression
-			Employee employees = new Employee();
-			List<Employee> newList = employees.Where((string s) => s = "Joe").ToList();
-			Console.WriteLine(newList);
+			Employee employee = new Employee();
+			List<Employee> newList = employees.Where(x => x.FirstName == "Joe").ToList();
+			Console.WriteLine();
+			Console.ReadLine();
 
 
 
 			//// Step 4 lambda express with ID greater than 5
 			//Employee employee = new Employee();
-			//List<Employee> newList = employee.ID.Select(x => x > 5).toList();
+			//List<Employee> newList = employee.Where(x => x.ID > 5).toList();
+			//Console.WriteLine(newList);
+			//Console.ReadLine()
 
 
 		}
