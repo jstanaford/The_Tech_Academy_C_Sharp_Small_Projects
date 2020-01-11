@@ -12,7 +12,7 @@ namespace LambdaPRactice1
 		{
 			//Creating my list:
 			
-			List<Employee> employees = new List<Employee>();
+			//List<Employee> employees = new List<Employee>();
 			employees.Add(new Employee { FirstName = "Henry", LastName = "Stanaford", ID = 1 });
 			employees.Add(new Employee { FirstName = "Joe", LastName = "Montana", ID = 2 });
 			employees.Add(new Employee { FirstName = "Joe", LastName = "Stalin", ID = 3 });
@@ -36,8 +36,8 @@ namespace LambdaPRactice1
 
 
 			// Step 3 lambda expression
-			Employee employee = new Employee();
-			List<Employee> newList = employee.FirstName.Select(x => x = Joe).ToList();
+			Employee employees = new Employee();
+			List<Employee> newList = employees.Where((string s) => s = "Joe").ToList();
 			Console.WriteLine(newList);
 
 
