@@ -38,12 +38,11 @@ namespace LambdaPRactice1
 			// Step 3 lambda expression
 			//Employee employee = new Employee();
 			////List<Employee> newList = employees.Where(x => x.FirstName == "Joe").ToList();
-			//foreach (Employee employee in employees)
+			//foreach (Employee employee in newList
 			//{
-			//	if (employee.FirstName == "Joe")
-			//	{
+			//	
 			//		Console.WriteLine(employee.FirstName + " " + employee.LastName + " " + employee.ID);
-			//	}
+			//	
 			//}
 			//Console.ReadLine();
 
@@ -53,12 +52,11 @@ namespace LambdaPRactice1
 			//Employee employee = new Employee();
 			List<Employee> newList = employees.Where(x => x.ID > 5).ToList();
 
-			foreach (Employee employee in employees)
+			foreach (Employee employee in newList)
 			{
-				if (employee.ID > 5)
-				{
+			
 					Console.WriteLine(employee.FirstName + " " + employee.LastName + " " + employee.ID);
-				}
+				
 			}
 			Console.ReadLine();
 			
