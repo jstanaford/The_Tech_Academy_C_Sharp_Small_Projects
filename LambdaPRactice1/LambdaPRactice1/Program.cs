@@ -36,18 +36,32 @@ namespace LambdaPRactice1
 
 
 			// Step 3 lambda expression
-			Employee employee = new Employee();
-			List<Employee> newList = employees.Where(x => x.FirstName == "Joe").ToList();
-			Console.WriteLine();
-			Console.ReadLine();
+			//Employee employee = new Employee();
+			////List<Employee> newList = employees.Where(x => x.FirstName == "Joe").ToList();
+			//foreach (Employee employee in employees)
+			//{
+			//	if (employee.FirstName == "Joe")
+			//	{
+			//		Console.WriteLine(employee.FirstName + " " + employee.LastName + " " + employee.ID);
+			//	}
+			//}
+			//Console.ReadLine();
 
 
 
 			//// Step 4 lambda express with ID greater than 5
 			//Employee employee = new Employee();
-			//List<Employee> newList = employee.Where(x => x.ID > 5).toList();
-			//Console.WriteLine(newList);
-			//Console.ReadLine()
+			List<Employee> newList = employees.Where(x => x.ID > 5).ToList();
+
+			foreach (Employee employee in employees)
+			{
+				if (employee.ID > 5)
+				{
+					Console.WriteLine(employee.FirstName + " " + employee.LastName + " " + employee.ID);
+				}
+			}
+			Console.ReadLine();
+			
 
 
 		}
