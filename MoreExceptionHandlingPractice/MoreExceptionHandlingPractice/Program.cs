@@ -25,7 +25,7 @@ namespace MoreExceptionHandlingPractice
 
 				int currentTime = DateTime.Now.Year;
 				int birthYear = currentTime - userInput;
-				Console.WriteLine("You were born in the year: " + birthYear );
+				Console.WriteLine("You were born in the approxiamte year: " + birthYear );
 				Console.ReadLine();
 
 			}
