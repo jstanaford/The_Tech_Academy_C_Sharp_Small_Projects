@@ -14,7 +14,5 @@ namespace Casino
 		public FraudException(string message) 
 			: base(message) { }
 
-
-		
 	}
 }

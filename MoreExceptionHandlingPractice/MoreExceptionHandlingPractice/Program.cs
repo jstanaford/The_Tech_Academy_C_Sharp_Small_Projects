@@ -15,16 +15,16 @@ namespace MoreExceptionHandlingPractice
 			try
 			{
 
-				DateTime currentTime = DateTime.Now;
-				Console.WriteLine("Hello, person!\nHow old are you?");
+				Console.WriteLine("Hello, person!\nHow old are you? \nPlease enter in years.");
 				int userInput = Convert.ToInt32(Console.ReadLine());
 
-				if (userInput < 0)
+				if (userInput < 1)
 				{
 					throw new NonPositiveException();
 				}
 
-				int birthYear = 2020 - userInput;
+				int currentTime = DateTime.Now.Year;
+				int birthYear = currentTime - userInput;
 				Console.WriteLine("You were born in the year: " + birthYear );
 				Console.ReadLine();
 
